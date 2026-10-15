@@ -13,22 +13,24 @@ public class Day44 {
         
         char predikat;
         
-        if ( nilai >= 90 && nilai <= 100) {
+        if ( nilai >= 85 && nilai <= 100) {
             predikat = 'A';
-        } else if (nilai >= 80 && nilai < 90 ) {
+        } else if (nilai >= 75 && nilai <= 84 ) {
             predikat = 'B';
-        } else if (nilai >= 70 && nilai < 80 ) {
+        } else if (nilai >= 65 && nilai <= 74 ) {
             predikat = 'C';
-        } else if (nilai >= 60 && nilai < 70 ) {
+        } else if (nilai >= 50 && nilai <= 64 ) {
             predikat = 'D';
-        } else if (nilai < 60 && nilai >= 0) {
+        } else if (nilai <= 49 && nilai >= 0) {
             predikat = 'E';
         } else {
             System.out.print("Nilai tidak Valid");
             return;
         }
-        
-        System.out.println("Predikat = " + predikat );
+
+        System.out.println("Nama : "+nama);
+        System.out.println("Nilai : "+nilai);
+        System.out.println("Predikat Nilai :  " + predikat );
         
         if (nilai >= 60 && nilai <= 100) {
             System.out.println("Status : Lulus");
