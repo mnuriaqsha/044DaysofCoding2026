@@ -31,9 +31,9 @@ public class Day44 {
         System.out.println("Predikat = " + predikat );
         
         if (nilai >= 60 && nilai <= 100) {
-            System.out.println("Lulus");
+            System.out.println("Status : Lulus");
         } else {
-            System.out.println("Gagal");
+            System.out.println("Status : Tidak Lulus");
         }
         
     }
