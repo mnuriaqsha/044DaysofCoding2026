@@ -7,27 +7,34 @@ public class Day44 {
 
         System.out.print("Masukkan Nama : ");
         String nama = hai.nextLine();
-
+        
         System.out.print("Masukkan Nilai : ");
         int nilai = hai.nextInt();
-
+        
         char predikat;
-
-        if (nilai >= 95 && nilai <= 100) {
+        
+        if ( nilai >= 90 && nilai <= 100) {
             predikat = 'A';
-        } else if (nilai >= 85 && nilai < 95) {
+        } else if (nilai >= 80 && nilai < 90 ) {
             predikat = 'B';
-        } else if (nilai >= 75 && nilai < 85) {
+        } else if (nilai >= 70 && nilai < 80 ) {
             predikat = 'C';
-        } else if (nilai >= 65 && nilai < 75) {
+        } else if (nilai >= 60 && nilai < 70 ) {
             predikat = 'D';
-        } else if (nilai < 65 && nilai >= 0) {
+        } else if (nilai < 60 && nilai >= 0) {
             predikat = 'E';
         } else {
             System.out.print("Nilai tidak Valid");
             return;
         }
-
-        System.out.println("Predikat = " + predikat);
+        
+        System.out.println("Predikat = " + predikat );
+        
+        if (nilai >= 60 && nilai <= 100) {
+            System.out.println("Lulus");
+        } else {
+            System.out.println("Gagal");
+        }
+        
     }
 }
